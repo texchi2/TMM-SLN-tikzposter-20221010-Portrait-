@@ -1,0 +1,82 @@
+\documentclass[25pt,a1paper]{tikzposter}
+\geometry{paperwidth=80cm,paperheight=200cm}
+%% Tikzposter is highly customizable: please see
+%% https://bitbucket.org/surmann/tikzposter/downloads/styleguide.pdf
+
+%% Available themes: see also
+%% https://bitbucket.org/surmann/tikzposter/downloads/themes.pdf
+% \usetheme{Default}
+% \usetheme{Rays}
+ \usetheme{Basic}
+% \usetheme{Simple}
+%\usetheme{Envelope}
+% \usetheme{Wave}
+% \usetheme{Board}
+% \usetheme{Autumn}
+% \usetheme{Desert}
+
+%% Further changes to the title etc is possible
+% \usetitlestyle{Default}
+% \usetitlestyle{Basic}
+% \usetitlestyle{Empty}
+% \usetitlestyle{Filled}
+% \usetitlestyle{Envelope}
+% \usetitlestyle{Wave}
+% \usetitlestyle{verticalShading}
+
+\usepackage{fontspec}
+\setmainfont{FreeSerif}
+\setsansfont{FreeSans}
+
+\author{Me Me Me}
+\title{Title title title}
+\institute{Taipei Medical University}
+%% Optional title graphic
+\titlegraphic{\includegraphics[width=7cm]{TMU_4283326b11cfc41667f8cf91f5caaa21.jpg}}
+%% Uncomment to switch off tikzposter footer
+% \tikzposterlatexaffectionproofoff
+
+\begin{document}
+\maketitle
+
+\block{A test!}{
+\begin{itemize}
+Combining the existing clinical resources and the cloud resources, TMU Healthcare System is further able to provide medical professionals and patients more assistance — at Taipei Medical University.
+\item #TMUtw 
+\item #TaipeiMedicalUniversity 
+\item #Cloud
+%\item we try to do that.
+\end{itemize}
+}
+
+\note[rotate=8, connection, width = 7cm,
+% roundedcorners=15, targetoffsetx=2cm
+]{Oh wait! A note!}
+
+\begin{columns}
+
+\column{0.7}
+\block{A test!}{
+\begin{itemize}
+\item We try to do this. what?
+\item we try to do that.
+\end{itemize}
+}
+
+\column{0.3}
+\block{A test!}{
+\begin{itemize}
+\item We try to do this. what?
+\item we try to do that.
+\end{itemize}
+}
+
+\end{columns}
+
+\block{Random Picture}{%
+\begin{tikzfigure}[Figures in tikzposter]
+\includegraphics[width=\linewidth]{Photo_4}
+\end{tikzfigure}
+}
+
+\end{document}
